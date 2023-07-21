@@ -1,10 +1,12 @@
 /* Font */
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
 @import url('./style.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
 
 body
 {
     overflow: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -19,6 +21,9 @@ img {
     vertical-align: middle;
 }
 
+.container{
+    text-align: center;
+}
 
 .cards {
     display: flex;
@@ -57,17 +62,17 @@ img {
     overflow: hidden;
     position: relative;
     background: var(--main-color);
+    border: 3px solid white;
 }
 
 .card_content {
-
     backdrop-filter: blur(50px);
     height: 100%;   
     display: flex;
     flex-direction: column;
     gap: 12px;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -83,6 +88,7 @@ img {
 .card-project-properties{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2px;
 }
 .card-project-admin-name {
@@ -175,4 +181,21 @@ img {
 #overview {
   padding: 20px 0;
   margin-top: 10px;
+}
+
+.not-found-card {
+    background-color: #090e14;
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 12px;
+    overflow: hidden;
+    position: relative;
+    background: var(--main-color);
+    border: 3px solid white;
+    margin: 50px auto;
+    padding: 10px 50px;
+    font-size: 16px;
 }
